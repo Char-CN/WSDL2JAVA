@@ -50,40 +50,58 @@ import javax.xml.bind.annotation.XmlType;
 public class ZshrJfpernr {
 
 	public final static String DILIMITER = "\t";
+	/** 人员号 */
 	@XmlElement(name = "Pernr", required = true)
 	protected String pernr;
+	/** 员工姓名 */
 	@XmlElement(name = "Nachn", required = true)
 	protected String nachn;
+	/** 组织单位 */
 	@XmlElement(name = "Orgeh", required = true)
 	protected String orgeh;
+	/** 组织单位短文本 */
 	@XmlElement(name = "Orgtx", required = true)
 	protected String orgtx;
+	/** 组织全路径 */
 	@XmlElement(name = "Zopath", required = true)
 	protected String zopath;
+	/** 雇佣状态 */
 	@XmlElement(name = "Stat2", required = true)
 	protected String stat2;
+	/** 雇佣状态描述 */
 	@XmlElement(name = "Text1", required = true)
 	protected String text1;
+	/** 人事范围 */
 	@XmlElement(name = "Werks", required = true)
 	protected String werks;
+	/** 人事范围文本 */
 	@XmlElement(name = "Name1", required = true)
 	protected String name1;
+	/** 职位 */
 	@XmlElement(name = "Plans", required = true)
 	protected String plans;
+	/** 职位描述 */
 	@XmlElement(name = "Plstx", required = true)
 	protected String plstx;
+	/** 标识类型 (IC 类型) */
 	@XmlElement(name = "Ictyp", required = true)
 	protected String ictyp;
+	/** IC描述 */
 	@XmlElement(name = "Ictxt", required = true)
 	protected String ictxt;
+	/** 标识编号 */
 	@XmlElement(name = "Icnum", required = true)
 	protected String icnum;
+	/** 邮箱 */
 	@XmlElement(name = "Email", required = true)
 	protected String email;
+	/** 手机 */
 	@XmlElement(name = "Zmtel", required = true)
 	protected String zmtel;
+	/** 办公电话 */
 	@XmlElement(name = "Zotel", required = true)
 	protected String zotel;
+	/** EMS用户ID */
 	@XmlElement(name = "Emsid", required = true)
 	protected String emsid;
 
@@ -492,25 +510,21 @@ public class ZshrJfpernr {
 		// + " " + stat2 + " " + text1 + " " + werks + " " + name1 + " " + plans
 		// + " " + plstx + " " + ictyp + " " + ictxt + " " + icnum + " " + email
 		// + " " + zmtel + " " + zotel + " " + emsid;
-		return pernr + DILIMITER + nachn + DILIMITER + name1 + DILIMITER + orgtx + DILIMITER + ictxt + DILIMITER + icnum;
+		//return pernr + DILIMITER + nachn + DILIMITER + name1 + DILIMITER + orgtx + DILIMITER + ictxt + DILIMITER + icnum;
+		//     人员编号	           姓名	               人事范围	           人事范围文本	       组织单位	           组织单位名称	       IC标识类型 (IC 类型)   身份证号	           手机号	               邮箱	               办公电话	           EMS号
+		return pernr + DILIMITER + nachn + DILIMITER + werks + DILIMITER + name1 + DILIMITER + orgeh + DILIMITER + orgtx + DILIMITER + ictyp + DILIMITER + ictxt + DILIMITER + zmtel + DILIMITER + email + DILIMITER + zotel + DILIMITER + emsid;
 	}
 
 	public String toFields() {
-		return "pernr" + DILIMITER + "nachn" + DILIMITER + "orgeh" + DILIMITER + "orgtx" + DILIMITER + "zopath" + DILIMITER + "stat2" + DILIMITER + "text1"
-				+ DILIMITER + "werks" + DILIMITER + "name1" + DILIMITER + "plans" + DILIMITER + "plstx" + DILIMITER + "ictyp" + DILIMITER + "ictxt" + DILIMITER
-				+ "icnum" + DILIMITER + "email" + DILIMITER + "zmtel" + DILIMITER + "zotel" + DILIMITER + "emsid";
+		return "pernr" + DILIMITER + "nachn" + DILIMITER  + "orgeh" + DILIMITER  + "orgtx" + DILIMITER       + "zopath" + DILIMITER   + "stat2" + DILIMITER  + "text1" + DILIMITER      + "werks" + DILIMITER  + "name1" + DILIMITER     + "plans" + DILIMITER + "plstx" + DILIMITER + "ictyp" + DILIMITER           + "ictxt" + DILIMITER + "icnum" + DILIMITER   + "email" + DILIMITER + "zmtel" + DILIMITER + "zotel" + DILIMITER + "emsid";
 	}
 
 	public String toFieldsInfo() {
-		return "人员号" + DILIMITER + "员工姓名" + DILIMITER + "组织单位" + DILIMITER + "组织单位短文本" + DILIMITER + "组织全路径" + DILIMITER + "雇佣状态" + DILIMITER + "雇佣状态描述"
-				+ DILIMITER + "人事范围" + DILIMITER + "人事范围文本" + DILIMITER + "职位" + DILIMITER + "职位描述" + DILIMITER + "标识类型 (IC 类型)" + DILIMITER + "IC描述"
-				+ DILIMITER + "标识编号" + DILIMITER + "邮箱" + DILIMITER + "手机" + DILIMITER + "办公电话" + DILIMITER + "EMS用户ID";
+		return "人员号" + DILIMITER + "员工姓名" + DILIMITER + "组织单位" + DILIMITER + "组织单位短文本" + DILIMITER + "组织全路径" + DILIMITER + "雇佣状态" + DILIMITER + "雇佣状态描述" + DILIMITER + "人事范围" + DILIMITER + "人事范围文本" + DILIMITER + "职位" + DILIMITER + "职位描述" + DILIMITER + "标识类型 (IC 类型)" + DILIMITER + "IC描述" + DILIMITER + "标识编号" + DILIMITER + "邮箱" + DILIMITER + "手机" + DILIMITER + "办公电话" + DILIMITER + "EMS用户ID";
 	}
 
 	public String toStringAll() {
-		return pernr + DILIMITER + nachn + DILIMITER + orgeh + DILIMITER + orgtx + DILIMITER + zopath + DILIMITER + stat2 + DILIMITER + text1 + DILIMITER
-				+ werks + DILIMITER + name1 + DILIMITER + plans + DILIMITER + plstx + DILIMITER + ictyp + DILIMITER + ictxt + DILIMITER + icnum + DILIMITER
-				+ email + DILIMITER + zmtel + DILIMITER + zotel + DILIMITER + emsid;
+		return pernr   + DILIMITER + nachn    + DILIMITER + orgeh + DILIMITER     + orgtx + DILIMITER        + zopath + DILIMITER     + stat2 + DILIMITER    + text1 + DILIMITER        + werks + DILIMITER     + name1 + DILIMITER       + plans + DILIMITER + plstx + DILIMITER     + ictyp + DILIMITER             + ictxt + DILIMITER   + icnum + DILIMITER    + email + DILIMITER + zmtel + DILIMITER + zotel + DILIMITER     + emsid;
 	}
 
 }
