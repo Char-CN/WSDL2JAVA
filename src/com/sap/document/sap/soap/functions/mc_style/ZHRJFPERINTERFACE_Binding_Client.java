@@ -183,8 +183,11 @@ public final class ZHRJFPERINTERFACE_Binding_Client {
 				// IC标识类型 (IC 类型)
 				sb.append(z.ictyp);
 				sb.append(ZshrJfpernr.DILIMITER);
-				// 身份证号
+				// IC标识类型 (IC 类型)
 				sb.append(z.ictxt);
+				sb.append(ZshrJfpernr.DILIMITER);
+				// 标示编号
+				sb.append(z.icnum);
 				sb.append(ZshrJfpernr.DILIMITER);
 				// 手机号
 				sb.append(z.zmtel);
@@ -203,9 +206,6 @@ public final class ZHRJFPERINTERFACE_Binding_Client {
 				sb.append(ZshrJfpernr.DILIMITER);
 				// 雇佣状态描述
 				sb.append(z.text1);
-				sb.append(ZshrJfpernr.DILIMITER);
-				// 组织全路径
-				sb.append("全路径:" + z.zopath);
 				if (map.containsKey(z.name1 + z.orgtx)) {
 					String[] strs = map.get(z.name1 + z.orgtx);
 					append1 = strs[2];
@@ -248,10 +248,10 @@ public final class ZHRJFPERINTERFACE_Binding_Client {
 					append2 = "新增_匹配未知";
 				}
 
-//				sb.append(ZshrJfpernr.DILIMITER);
-//				sb.append(append1);
-//				sb.append(ZshrJfpernr.DILIMITER);
-//				sb.append(append2);
+				sb.append(ZshrJfpernr.DILIMITER);
+				sb.append(append1);
+				sb.append(ZshrJfpernr.DILIMITER);
+				sb.append(append2);
 
 				// // 新增字段
 				// sb.append(ZshrJfpernr.DILIMITER);

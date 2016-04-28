@@ -484,24 +484,24 @@ public class ZshrJfpernr {
 	}
 
 	public void clearChar() {
-		this.pernr = this.pernr.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.nachn = this.nachn.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.orgeh = this.orgeh.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.orgtx = this.orgtx.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.zopath = this.zopath.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.stat2 = this.stat2.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.text1 = this.text1.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.werks = this.werks.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.name1 = this.name1.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.plans = this.plans.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.plstx = this.plstx.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.ictyp = this.ictyp.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.ictxt = this.ictxt.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.icnum = this.icnum.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.email = this.email.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.zmtel = this.zmtel.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.zotel = this.zotel.replace("\r", "").replace("\n", "").replace("\t", "");
-		this.emsid = this.emsid.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.pernr = this.pernr == null ? null : this.pernr.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.nachn = this.nachn == null ? null : this.nachn.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.orgeh = this.orgeh == null ? null : this.orgeh.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.orgtx = this.orgtx == null ? null : this.orgtx.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.zopath = this.zopath == null ? null : this.zopath.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.stat2 = this.stat2 == null ? null : this.stat2.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.text1 = this.text1 == null ? null : this.text1.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.werks = this.werks == null ? null : this.werks.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.name1 = this.name1 == null ? null : this.name1.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.plans = this.plans == null ? null : this.plans.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.plstx = this.plstx == null ? null : this.plstx.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.ictyp = this.ictyp == null ? null : this.ictyp.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.ictxt = this.ictxt == null ? null : this.ictxt.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.icnum = this.icnum == null ? null : this.icnum.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.email = this.email == null ? null : this.email.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.zmtel = this.zmtel == null ? null : this.zmtel.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.zotel = this.zotel == null ? null : this.zotel.replace("\r", "").replace("\n", "").replace("\t", "");
+		this.emsid = this.emsid == null ? null : this.emsid.replace("\r", "").replace("\n", "").replace("\t", "");
 	}
 
 	@Override
