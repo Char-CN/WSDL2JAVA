@@ -1,0 +1,3 @@
+# WSDL2JAVA
+
+test
