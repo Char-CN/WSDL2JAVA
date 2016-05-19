@@ -19,8 +19,8 @@ public class ReadFile {
 	@SuppressWarnings("resource")
 	public static void main(String args[]) throws java.lang.Exception {
 		long begin = System.currentTimeMillis();
-		String readPath = SourceUtil.root + "data/e.csv";
-		String fName = SourceUtil.root + "data/e_all.csv";
+		String readPath = SourceUtil.root + "data/e0518.csv";
+		String fName = readPath+".all.csv";
 
 		// personnel_areas organization secondary_dimension primary_dimension
 		HashMap<String, String[]> map = new HashMap<String, String[]>();
